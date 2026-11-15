@@ -1,0 +1,71 @@
+{
+  "pipeline": "recommendation_pipeline_dag",
+  "status": "SUCCESS",
+  "started_at": "2026-11-15T13:41:32.927215Z",
+  "ended_at": "2026-11-15T13:41:37.206764Z",
+  "duration_sec": 4.279549,
+  "tasks": [
+    {
+      "task": "ingest",
+      "status": "SUCCESS",
+      "depends_on": [],
+      "elapsed_sec": 1.187439,
+      "result_type": "dict"
+    },
+    {
+      "task": "validate",
+      "status": "SUCCESS",
+      "depends_on": [
+        "ingest"
+      ],
+      "elapsed_sec": 0.039876,
+      "result_type": "dict"
+    },
+    {
+      "task": "prepare",
+      "status": "SUCCESS",
+      "depends_on": [
+        "validate"
+      ],
+      "elapsed_sec": 0.046312,
+      "result_type": "dict"
+    },
+    {
+      "task": "transform",
+      "status": "SUCCESS",
+      "depends_on": [
+        "prepare"
+      ],
+      "elapsed_sec": 0.09794,
+      "result_type": "dict"
+    },
+    {
+      "task": "features",
+      "status": "SUCCESS",
+      "depends_on": [
+        "transform"
+      ],
+      "elapsed_sec": 0.04112,
+      "result_type": "dict"
+    },
+    {
+      "task": "train",
+      "status": "SUCCESS",
+      "depends_on": [
+        "features"
+      ],
+      "elapsed_sec": 2.707244,
+      "result_type": "dict"
+    },
+    {
+      "task": "evaluate",
+      "status": "SUCCESS",
+      "depends_on": [
+        "train"
+      ],
+      "elapsed_sec": 0.159138,
+      "result_type": "DataFrame"
+    }
+  ],
+  "error": null
+}

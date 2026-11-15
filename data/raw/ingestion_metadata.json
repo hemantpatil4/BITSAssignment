@@ -1,0 +1,14 @@
+{
+  "source": "synthetic_movie_platform",
+  "description": "Documented synthetic dataset mimicking an online movie platform. Includes intentional dirty records for validation demos.",
+  "n_users": 500,
+  "n_items": 200,
+  "n_interactions": 12006,
+  "generated_at": "2026-11-15T13:41:34.114715Z",
+  "student_id": "2025ag05734",
+  "files": {
+    "users": "data/raw/users.csv",
+    "items": "data/raw/items.csv",
+    "interactions": "data/raw/interactions.csv"
+  }
+}

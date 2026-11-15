@@ -1,0 +1,18 @@
+{
+  "popularity": {
+    "run_id": "d2afca486d3a421b86260a3d2df2bfe1",
+    "model_path": "/Users/rutujapatil/BITSSEM2/DataManagement/Assignment2_2025ag05734/models/popularity_model.joblib",
+    "params": {
+      "top_n": 100
+    }
+  },
+  "matrix_factorization": {
+    "run_id": "56a25742e1714cb990e6863a94e5f072",
+    "model_path": "/Users/rutujapatil/BITSSEM2/DataManagement/Assignment2_2025ag05734/models/mf_model.joblib",
+    "params": {
+      "n_factors": 32,
+      "random_seed": 42
+    },
+    "explained_variance_sum": 0.550532707590063
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "n_user_features_rows": 500,
+  "n_item_features_rows": 200,
+  "n_interaction_features_rows": 9601,
+  "reference_timestamp": "2025-02-04 06:31:00",
+  "catalog_size": 10
+}

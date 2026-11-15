@@ -1,0 +1,11 @@
+feature_name,entity,dtype,description,source
+user_avg_rating,user,float,Average rating given by the user on training interactions,interactions_train
+user_activity_count,user,int,Number of training interactions for the user,interactions_train
+user_rating_std,user,float,Standard deviation of user ratings,interactions_train
+preferred_category,user,string,Most frequently rated item category for the user,interactions_train + items
+days_since_last_interaction,user,float,Days between reference date and user's last interaction,interactions_train
+item_popularity,item,int,Number of users who interacted with the item in training,interactions_train
+item_avg_rating,item,float,Average rating received by the item,interactions_train
+item_category,item,string,Canonical item category,items
+item_release_year,item,int,Release year of the item,items
+interaction_recency_days,interaction,float,Days between interaction timestamp and max training timestamp,interactions_train

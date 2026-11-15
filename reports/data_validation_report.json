@@ -1,0 +1,75 @@
+{
+  "validated_at": "2026-11-15T13:41:34.153744Z",
+  "input_interactions": 12006,
+  "valid_interactions": 12000,
+  "invalid_interactions": 6,
+  "checks": [
+    {
+      "check": "users_schema",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "items_schema",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "interactions_schema",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "users_duplicate_ids",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "items_duplicate_ids",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "interactions_missing_values",
+      "passed": false,
+      "count": 1
+    },
+    {
+      "check": "interactions_duplicates",
+      "passed": false,
+      "count": 1
+    },
+    {
+      "check": "invalid_ratings",
+      "passed": false,
+      "count": 1
+    },
+    {
+      "check": "invalid_timestamps",
+      "passed": false,
+      "count": 1
+    },
+    {
+      "check": "referential_integrity_users",
+      "passed": false,
+      "count": 1
+    },
+    {
+      "check": "referential_integrity_items",
+      "passed": false,
+      "count": 1
+    }
+  ],
+  "error_breakdown": {
+    "missing_values": 1,
+    "duplicate_interaction": 1,
+    "invalid_rating": 1,
+    "invalid_timestamp": 1,
+    "unknown_user_id": 1,
+    "unknown_item_id": 1
+  },
+  "artifacts": {
+    "valid_interactions": "/Users/rutujapatil/BITSSEM2/DataManagement/Assignment2_2025ag05734/data/processed/interactions_validated.csv",
+    "error_dataset": "/Users/rutujapatil/BITSSEM2/DataManagement/Assignment2_2025ag05734/data/errors/invalid_interactions.csv"
+  }
+}

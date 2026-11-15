@@ -1,0 +1,21 @@
+Apache-Airflow-style DAG Run Screenshot (text capture)
+============================================================
+DAG: recommendation_pipeline
+Run status: SUCCESS
+Start: 2026-11-15T13:41:32.927215Z
+End:   2026-11-15T13:41:37.206764Z
+Duration: 4.28 seconds
+
+Task         Depends On           Status      Seconds
+------------------------------------------------------------
+ingest       -                    SUCCESS        1.19
+validate     ingest               SUCCESS        0.04
+prepare      validate             SUCCESS        0.05
+transform    prepare              SUCCESS        0.10
+features     transform            SUCCESS        0.04
+train        features             SUCCESS        2.71
+evaluate     train                SUCCESS        0.16
+
+Overall: SUCCESS
+Dependency graph:
+  ingest -> validate -> prepare -> transform -> features -> train -> evaluate

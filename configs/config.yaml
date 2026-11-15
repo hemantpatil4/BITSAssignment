@@ -1,0 +1,51 @@
+project:
+  name: recommendation-pipeline
+  student_id: "2025ag05734"
+  student_name: "Hemant Patil"
+
+data:
+  n_users: 500
+  n_items: 200
+  n_interactions: 12000
+  random_seed: 42
+  min_rating: 1.0
+  max_rating: 5.0
+  categories:
+    - Action
+    - Comedy
+    - Drama
+    - Thriller
+    - Sci-Fi
+    - Romance
+    - Documentary
+    - Animation
+
+validation:
+  rating_min: 1.0
+  rating_max: 5.0
+
+split:
+  method: time_based
+  test_ratio: 0.2
+
+features:
+  top_n_categories: 1
+
+training:
+  k: 10
+  n_factors: 32
+  random_seed: 42
+  popularity_top_n: 100
+
+evaluation:
+  k: 10
+  relevance_threshold: 4.0
+
+paths:
+  raw: data/raw
+  processed: data/processed
+  features: data/features
+  errors: data/errors
+  models: models
+  reports: reports
+  mlruns: mlruns

@@ -1,0 +1,9 @@
+{
+  "rows_before_clean": 12000,
+  "rows_after_clean": 12000,
+  "train_rows": 9601,
+  "test_rows": 2391,
+  "cutoff_timestamp": "2025-02-04 06:31:00",
+  "split_method": "time_based",
+  "test_ratio": 0.2
+}

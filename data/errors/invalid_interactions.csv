@@ -1,0 +1,7 @@
+user_id,item_id,rating,timestamp,event_type,error_reason
+U0004,M0004,,2024-06-04 10:00:00,rating,missing_values
+U0313,M0058,4.0,2024-08-30 18:05:00,view,duplicate_interaction
+U0002,M0002,9.5,2024-06-03 10:00:00,rating,invalid_rating
+U0003,M0003,4.0,not-a-date,click,invalid_timestamp
+U9999,M0001,4.0,2024-06-01 10:00:00,rating,unknown_user_id
+U0001,M9999,3.0,2024-06-02 10:00:00,view,unknown_item_id
